@@ -6,7 +6,9 @@
   "version": "1.0.0",
   "description": "readme-generator",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "inquirer": "^8.2.4"
+  },
   "scripts": {
     "start": "node index.js"
   },
