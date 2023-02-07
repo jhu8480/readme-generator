@@ -3,12 +3,8 @@ const fsPro = require('fs').promises;
 const inquirer = require('inquirer');
 
 
-let questions;
-fs.readFile('./questions.json', 'utf8', (err, data) => {
-  if(err) throw err;
-  questions = JSON.parse(data);
-
-  const prompt = inquirer.createPromptModule();
+const questions = JSON.parse(fs.readFileSync('./questions.json', 'utf8'));
+const prompt = inquirer.createPromptModule();
   prompt(questions).then(
   async (response) => {
     const readmeFile = `./files/readme.md`;
@@ -46,7 +42,6 @@ fs.readFile('./questions.json', 'utf8', (err, data) => {
     });
   }
 );
-});
 
 
 
