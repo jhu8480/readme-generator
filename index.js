@@ -15,29 +15,29 @@ const prompt = inquirer.createPromptModule();
 
     const licenseBadge = `[![License](https://img.shields.io/badge/License-${response.license}-blue.svg)]`;
 
-    await fsPro.appendFile(readmeFile, `\n\n## License \n${response.license} \n${licenseBadge}`);
+    await fsPro.appendFile(readmeFile, `\n\n## License \n\t${response.license} \n\t${licenseBadge}`);
 
-    await fsPro.appendFile(readmeFile, `\n\n## Description \n${response.description}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Description \n\t${response.description}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Installation \n${response.installation}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Installation \n\t${response.installation}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Usage \n${response.usage}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Usage \n\t${response.usage}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Contributors \n${response.contributors}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Contributors \n\t${response.contributors}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## GitHub Username \n${response.github}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## GitHub Username \n\t${response.github}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Email \n${response.email}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Email \n\t${response.email}`, (err) => {
       if (err) throw err;
     });
   }
