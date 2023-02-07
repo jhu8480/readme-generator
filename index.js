@@ -1,34 +1,15 @@
+const fs = require('fs');
 const fsPro = require('fs').promises;
 const inquirer = require('inquirer');
 
-const prompt = inquirer.createPromptModule();
 
-const questions = [
-  {
-    type: 'input',
-    message: 'What is the name of your project?',
-    name: 'title'
-  },
-  {
-    type: 'list',
-    name: 'license',
-    message: 'Choose a license for your project:',
-    choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3']
-  },
-  {
-    type: 'input',
-    message: 'Please input the description of the project',
-    name: 'description'
-  },
-  {
-    type: 'input',
-    message: 'Please type in the installation instructions',
-    name: 'installation'
-  }
-];
+let questions;
+fs.readFile('./questions.json', 'utf8', (err, data) => {
+  if(err) throw err;
+  questions = JSON.parse(data);
 
-
-prompt(questions).then(
+  const prompt = inquirer.createPromptModule();
+  prompt(questions).then(
   async (response) => {
     const readmeFile = `./files/readme.md`;
     await fsPro.mkdir('./files');
@@ -48,9 +29,24 @@ prompt(questions).then(
       if (err) throw err;
     });
 
+    await fsPro.appendFile(readmeFile, `\n\n## Usage \n${response.usage}`, (err) => {
+      if (err) throw err;
+    });
+
+    await fsPro.appendFile(readmeFile, `\n\n## Contributors \n${response.contributors}`, (err) => {
+      if (err) throw err;
+    });
+
+    await fsPro.appendFile(readmeFile, `\n\n## GitHub Username \n${response.github}`, (err) => {
+      if (err) throw err;
+    });
+
+    await fsPro.appendFile(readmeFile, `\n\n## Email \n${response.email}`, (err) => {
+      if (err) throw err;
+    });
   }
 );
-
+});
 
 
 
@@ -58,4 +54,4 @@ prompt(questions).then(
 process.on('uncaughtException', err => {
   console.error(`There was an uncaught error: ${err}`);
   process.exit(1); // exit the app
-})
+});
