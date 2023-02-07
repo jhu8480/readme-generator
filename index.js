@@ -10,6 +10,12 @@ const questions = [
     name: 'title'
   },
   {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license for your project:',
+    choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3']
+  },
+  {
     type: 'input',
     message: 'Please input the description of the project',
     name: 'description'
@@ -18,12 +24,6 @@ const questions = [
     type: 'input',
     message: 'Please type in the installation instructions',
     name: 'installation'
-  },
-  {
-    type: 'list',
-    message: 'Please choose liscence type',
-    name: 'liscence',
-    choices: ['MIT License', 'Apache License 2.0', 'Mozilla Public License 2.0', 'Boost Software License 1.0', 'Eclipse Public License 2.0']
   }
 ];
 
@@ -32,23 +32,22 @@ prompt(questions).then(
   async (response) => {
     const readmeFile = `./files/readme.md`;
     await fsPro.mkdir('./files');
-    
     await fsPro.writeFile(readmeFile, `# ${response.title}\n`, (err) => {
       if (err) throw err;
-      else console.log('title added to readme.md');
     });
+
+    const licenseBadge = `[![License](https://img.shields.io/badge/License-${response.license}-blue.svg)]`;
+
+    await fsPro.appendFile(readmeFile, `\n\n## License \n${response.license} \n${licenseBadge}`);
 
     await fsPro.appendFile(readmeFile, `\n\n## Description \n${response.description}`, (err) => {
       if (err) throw err;
-      else console.log('Description added to readme.md');
     });
 
     await fsPro.appendFile(readmeFile, `\n\n## Installation \n${response.installation}`, (err) => {
       if (err) throw err;
-      else console.log('Installation instructions added to readme.md');
     });
 
-    
   }
 );
 
