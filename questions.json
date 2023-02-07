@@ -32,8 +32,8 @@
   },
   {
     "type": "input",
-    "name": "contributors",
-    "message": "Please type in contributors"
+    "name": "contributing",
+    "message": "Please type in how do you want people to contribute"
   },
   {
     "type": "input",
