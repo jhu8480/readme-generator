@@ -20,25 +20,25 @@ prompt(questions).then(
 
     const licenseBadge = `![License](https://img.shields.io/badge/License-${response.license}-blue.svg)`;
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="license">## License</a> \n\t${response.license} \n\t${licenseBadge}`);
+    await fsPro.appendFile(readmeFile, `\n\n<a id="license">license</a>\n## License \n\t${response.license} \n\t${licenseBadge}`);
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="description">## Description </a>\n\t${response.description}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n<a id="description">description</a>\n## Description\n\t${response.description}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="installation">## Installation </a>\n\t${response.installation}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n<a id="installation">installation</a>\n## Installation\n\t${response.installation}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="usage">## Usage </a>\n\t${response.usage}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n<a id="usage">usage</a>\n## Usage\n\t${response.usage}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="contributing">## Contributing </a>\n\t${response.contributing}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n<a id="contributing">contributing</a>\n## Contributing\n\t${response.contributing}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, '\n\n<a id="questions">## Questions </a>\n\t Where are my projects stored?')
+    await fsPro.appendFile(readmeFile, '\n\n<a id="questions">questions</a>\n## Questions \n\t Where are my projects stored?')
 
     await fsPro.appendFile(readmeFile, `\n\t - link to github profile: https://github.com/${response.github}/`, (err) => {
       if (err) throw err;
@@ -50,7 +50,7 @@ prompt(questions).then(
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="keywords">## Keywords</a> \n\t${response.keywords.join(' ')}`);
+    await fsPro.appendFile(readmeFile, `\n\n<a id="keywords">keywords</a>\n## Keywords\n\t${response.keywords.join(' ')}`);
   }
 );
 
