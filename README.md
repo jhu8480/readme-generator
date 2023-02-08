@@ -16,7 +16,8 @@ MIT
 
 ## Description
 
-This is a readme generator
+This is a readme generator. Users need to have node installed to use the program. By following prompts in terminal, a readme.md file will be generated and stored in the files folder. Before use it again, the folder needs to be removed.
+
 
 ## Installation
 
@@ -24,7 +25,7 @@ Run 'npm install' to install dependencies
 
 ## Usage
 
-N/A
+Run 'npm run start' or 'node index' to run the program
 
 ## Contributing
 
