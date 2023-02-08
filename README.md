@@ -2,12 +2,12 @@
 
 ## Table of Contents
 
-     - [license](#license)
-     - [Description](#description)
-     - [Installation](#installation)
-     - [Usage](#usage)
-     - [Contributing](#contributing)
-     - [Questions](#questions)
+     - [license - Link](#license)
+     - [Description - Link](#description)
+     - [Installation - Link](#installation)
+     - [Usage - Link](#usage)
+     - [Contributing - Link](#contributing)
+     - [Questions - Link](#questions)
 
 <a id="license"></a>
 
@@ -26,7 +26,7 @@
 
 ## Installation
 
-    run 'npm install' to install dependencies
+    run 'npm install"
 
 <a id="usage"></a>
 
