@@ -17,13 +17,13 @@ MIT
 This is a readme generator
 
 ## Installation
-Run 'npm install' to install dependencies
+run 'npm install'
 
 ## Usage
-N/A
+run 'npm run start'
 
 ## Contributing
-Fork and contribute
+fork and contribute
 
 ## Questions 
 Where are my projects stored?
@@ -32,4 +32,4 @@ How do I contact the author?
 - Email: jhu8480@gmail.com
 
 ## Keywords
-	JavaScript node
+JavaScript node

@@ -44,13 +44,16 @@ prompt(questions).then(
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, '\nHow do I contact the author?')
-
-    await fsPro.appendFile(readmeFile, `\n- Email: ${response.email}`, (err) => {
+    await fsPro.appendFile(readmeFile, '\nHow do I contact the author?', (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Keywords\n\t${response.keywords.join(' ')}`);
+    await fsPro.appendFile(readmeFile, `\n- Email: ${response.email}`, (err) => {  if (err) throw err;
+    });
+
+    await fsPro.appendFile(readmeFile, `\n\n## Keywords\n${response.keywords.join(' ')}`, (err) => {
+      if (err) throw err;
+    });
   }
 );
 
