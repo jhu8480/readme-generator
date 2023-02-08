@@ -1,12 +1,12 @@
 # Readme generator
 
 ## Table of Contents
-	 1. [license](#license)
-	 2. [Description](#description)
-	 3. [Installation](#installation)
-	 4. [Usage](#usage)
-	 5. [Contributing](#contributing)
-	 6. [Questions](#questions)
+	 1. [license - Link](#license)
+	 2. [Description - Link](#description)
+	 3. [Installation - Link](#installation)
+	 4. [Usage - Link](#usage)
+	 5. [Contributing - Link](#contributing)
+	 6. [Questions - Link](#questions)
 
 ## License <a name="license"></a> 
 	[![License](https://img.shields.io/badge/License-MIT-blue.svg)]
