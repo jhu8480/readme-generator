@@ -16,7 +16,7 @@ prompt(questions).then(
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Table of Contents\n\t - [license - Link](#license)\n\t - [Description - Link](#description)\n\t - [Installation - Link](#installation)\n\t - [Usage - Link](#usage)\n\t - [Contributing - Link](#contributing)\n\t - [Questions - Link](#questions)`)
+    await fsPro.appendFile(readmeFile, `\n\n## Table of Contents\n\t -[license - Link](#license)\n\t -[Description -Link](#description)\n\t -[Installation - Link](#installation)\n\t -[Usage - Link](#usage)\n\t -[Contributing - Link](#contributing)\n\t -[Questions - Link](#questions)`)
 
     const licenseBadge = `![License](https://img.shields.io/badge/License-${response.license}-blue.svg)`;
 

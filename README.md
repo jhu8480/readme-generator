@@ -2,12 +2,12 @@
 
 ## Table of Contents
 
-     - [license - Link](#license)
-     - [Description - Link](#description)
-     - [Installation - Link](#installation)
-     - [Usage - Link](#usage)
-     - [Contributing - Link](#contributing)
-     - [Questions - Link](#questions)
+     -[license - Link](#license)
+     -[Description -Link](#description)
+     -[Installation - Link](#installation)
+     -[Usage - Link](#usage)
+     -[Contributing - Link](#contributing)
+     -[Questions - Link](#questions)
 
 <a id="license"></a>
 
@@ -26,7 +26,7 @@
 
 ## Installation
 
-    run 'npm install"
+    run 'npm install'
 
 <a id="usage"></a>
 
@@ -38,7 +38,7 @@
 
 ## Contributing
 
-    Fork
+    Fork and contribute
 
 <a id="questions"></a>
 
