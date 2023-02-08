@@ -12,8 +12,7 @@
 	[![License](https://img.shields.io/badge/License-MIT-blue.svg)]
 
 ## Description <a name="description"></a>
-	This is a readme generator. Users can create readme files by enter info by following prompts in terminal.
-  It is important to note that when there is an existing files folder, it has to be removed or renamed before running the program, because the program will try to create a folder with the same name every time it runs.
+	This is a readme generator. Users can create readme files by enter info by following prompts in terminal. It is important to note that when there is an existing files folder, it has to be removed or renamed before running the program, because the program will try to create a folder with the same name every time it runs.
 
 ## Installation <a name="installation"></a>
 	run 'npm install' to install all the dependencies
