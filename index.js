@@ -49,6 +49,8 @@ prompt(questions).then(
     await fsPro.appendFile(readmeFile, `\n\t - Email: ${response.email}`, (err) => {
       if (err) throw err;
     });
+
+    await fsPro.appendFile(readmeFile, `\n\n## Keywords \n\t${response.keywords.join(' ')}`);
   }
 );
 

@@ -49,5 +49,11 @@
     "type": "input",
     "name": "email",
     "message": "Please enter your email"
+  },
+  {
+    "type": "checkbox",
+    "name": "keywords",
+    "message": "Please select key words?",
+    "choices": ["JavaScript", "node", "express", "mongoDB", "mySQL"]
   }
 ]
