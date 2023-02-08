@@ -1,35 +1,35 @@
-# readme generator
+# Readme generator
 
 
 ## Table of Contents
-	 - [License - Link](#license)
-	 - [Description - Link](#description)
-	 - [Installation - Link](#installation)
-	 - [Usage - Link](#usage)
-	 - [Contributing - Link](#contributing)
-	 - [Questions - Link](#questions)
+[License](#license)
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[Contributing](#contributing)
+[Questions](#questions)
 
 ## License 
-	MIT 
-	![License](https://img.shields.io/badge/License-MIT-blue.svg)
+MIT 
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Description
-	This is a readme generator
+This is a readme generator
 
 ## Installation
-	N/A
+Run 'npm install' to install dependencies
 
 ## Usage
-	N/A
+N/A
 
 ## Contributing
-	Fork
+Fork and contribute
 
 ## Questions 
-	 Where are my projects stored?
-	 - link to github profile: https://github.com/jhu8480/
-	 How do I contact the author?
-	 - Email: jhu8480@gmail.com
+Where are my projects stored?
+- link to github profile: https://github.com/jhu8480/
+How do I contact the author?
+- Email: jhu8480@gmail.com
 
 ## Keywords
 	JavaScript node

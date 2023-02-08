@@ -16,37 +16,37 @@ prompt(questions).then(
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Table of Contents\n\t - [License - Link](#license)\n\t - [Description - Link](#description)\n\t - [Installation - Link](#installation)\n\t - [Usage - Link](#usage)\n\t - [Contributing - Link](#contributing)\n\t - [Questions - Link](#questions)`)
+    await fsPro.appendFile(readmeFile, `\n\n## Table of Contents\n[License](#license)\n[Description](#description)\n[Installation](#installation)\n[Usage](#usage)\n[Contributing](#contributing)\n[Questions](#questions)`)
 
     const licenseBadge = `![License](https://img.shields.io/badge/License-MIT-blue.svg)`;
 
-    await fsPro.appendFile(readmeFile, `\n\n## License \n\t${response.license} \n\t${licenseBadge}`);
+    await fsPro.appendFile(readmeFile, `\n\n## License \n${response.license} \n${licenseBadge}`);
 
-    await fsPro.appendFile(readmeFile, `\n\n## Description\n\t${response.description}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Description\n${response.description}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Installation\n\t${response.installation}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Installation\n${response.installation}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Usage\n\t${response.usage}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Usage\n${response.usage}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Contributing\n\t${response.contributing}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Contributing\n${response.contributing}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, '\n\n## Questions \n\t Where are my projects stored?')
+    await fsPro.appendFile(readmeFile, '\n\n## Questions \nWhere are my projects stored?')
 
-    await fsPro.appendFile(readmeFile, `\n\t - link to github profile: https://github.com/${response.github}/`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n- link to github profile: https://github.com/${response.github}/`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, '\n\t How do I contact the author?')
+    await fsPro.appendFile(readmeFile, '\nHow do I contact the author?')
 
-    await fsPro.appendFile(readmeFile, `\n\t - Email: ${response.email}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n- Email: ${response.email}`, (err) => {
       if (err) throw err;
     });
 
