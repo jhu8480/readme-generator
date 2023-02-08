@@ -1,33 +1,33 @@
 # Readme generator
 
 ## Table of Contents
-	 1. [license - Link](#license)
-	 2. [Description - Link](#description)
-	 3. [Installation - Link](#installation)
-	 4. [Usage - Link](#usage)
-	 5. [Contributing - Link](#contributing)
-	 6. [Questions - Link](#questions)
 
-## License <a name="license"></a> 
-	[![License](https://img.shields.io/badge/License-MIT-blue.svg)]
+     1. [license](#license)
+     2. [Description](#description)
+     3. [Installation](#installation)
+     4. [Usage](#usage)
+     5. [Contributing](#contributing)
+     6. [Questions](#questions)
 
-## Description <a name="description"></a>
-	This is a readme generator. Users can create readme files by enter info by following prompts in terminal. It is important to note that when there is an existing files folder, it has to be removed or renamed before running the program, because the program will try to create a folder with the same name every time it runs.
+<a id="license">## License</a>
+MIT
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Installation <a name="installation"></a>
-	run 'npm install' to install all the dependencies
+<a id="description">## Description </a>
+This is a node program
 
-## Usage <a name="usage"></a>
-	N/A
+<a id="installation">## Installation </a>
+npm install
 
-## Contributing <a name="contributing"></a>
-	N/A
+<a id="usage">## Usage </a>
+n/A
 
-## Questions <a name="questions"></a>
-	 Where are my projects stored?
-	 - link to github profile: https://github.com/jhu8480/
-	 How do I contact the author?
-	 - Email: jhu8480@gmail.com
+<a id="contributing">## Contributing </a>
+fork
 
-## Keywords 
-	javaScript, node, inquirer, file system, asynchronous javascript, promise
+<a id="questions">## Questions </a>
+Where are my projects stored? - link to github profile: https://github.com/jhu8480/
+How do I contact the author? - Email: jhu8480@gmail.com
+
+<a id="keywords">## Keywords</a>
+JavaScript node
