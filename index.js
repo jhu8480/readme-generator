@@ -16,29 +16,29 @@ prompt(questions).then(
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n## Table of Contents\n\t -[license - Link](#license)\n\t -[Description -Link](#description)\n\t -[Installation - Link](#installation)\n\t -[Usage - Link](#usage)\n\t -[Contributing - Link](#contributing)\n\t -[Questions - Link](#questions)`)
+    await fsPro.appendFile(readmeFile, `\n\n## Table of Contents\n\t - [License - Link](#license)\n\t - [Description - Link](#description)\n\t - [Installation - Link](#installation)\n\t - [Usage - Link](#usage)\n\t - [Contributing - Link](#contributing)\n\t - [Questions - Link](#questions)`)
 
-    const licenseBadge = `![License](https://img.shields.io/badge/License-${response.license}-blue.svg)`;
+    const licenseBadge = `![License](https://img.shields.io/badge/License-MIT-blue.svg)`;
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="license"></a>\n## License \n\t${response.license} \n\t${licenseBadge}`);
+    await fsPro.appendFile(readmeFile, `\n\n## License \n\t${response.license} \n\t${licenseBadge}`);
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="description"></a>\n## Description\n\t${response.description}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Description\n\t${response.description}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="installation"></a>\n## Installation\n\t${response.installation}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Installation\n\t${response.installation}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="usage"></a>\n## Usage\n\t${response.usage}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Usage\n\t${response.usage}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="contributing"></a>\n## Contributing\n\t${response.contributing}`, (err) => {
+    await fsPro.appendFile(readmeFile, `\n\n## Contributing\n\t${response.contributing}`, (err) => {
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, '\n\n<a id="questions"></a>\n## Questions \n\t Where are my projects stored?')
+    await fsPro.appendFile(readmeFile, '\n\n## Questions \n\t Where are my projects stored?')
 
     await fsPro.appendFile(readmeFile, `\n\t - link to github profile: https://github.com/${response.github}/`, (err) => {
       if (err) throw err;
@@ -50,7 +50,7 @@ prompt(questions).then(
       if (err) throw err;
     });
 
-    await fsPro.appendFile(readmeFile, `\n\n<a id="keywords"></a>\n## Keywords\n\t${response.keywords.join(' ')}`);
+    await fsPro.appendFile(readmeFile, `\n\n## Keywords\n\t${response.keywords.join(' ')}`);
   }
 );
 
